@@ -2,7 +2,7 @@ const container = document.querySelector(".container");
 const inputRow = document.querySelector("#rows")
 const inputCol = document.querySelector("#cols")
 const dynamicTable = (rows, cols , cellNumber = 1) => {
-if(cols>62){cols=62;alert('columns limited to 62')}
+if(rows>62){rows=62;alert('rows limited to 62')}
     const table = document.createElement("table");
     for (let i = 1; i <= rows; i++) {
         const row = document.createElement("tr");
